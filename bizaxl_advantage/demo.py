@@ -38,7 +38,7 @@ def _skip_if_exists(doctype: str, field: str, value: str) -> bool:
 def _insert(doctype: str, kwargs: dict) -> str:
 	"""Insert a document (ignoring user permissions) and return its name."""
 	doc = frappe.get_doc({"doctype": doctype, **kwargs})
-	doc.insert(ignore_permissions=True, ignore_if_duplicate=True)
+	doc.insert(ignore_permissions=True)
 	frappe.db.commit()
 	print(f"  ✅ Created {doctype}: {doc.name}")
 	return doc.name
@@ -245,7 +245,7 @@ def _ensure_erpnext_prereqs():
 			_insert("Warehouse", {"warehouse_name": "Main Store", "company": company, "is_group": 0})
 			warehouse = f"Main Store - {company_abbr}"
 
-	warehouse = frappe.db.get_value("Warehouse", {}, "name")
+	warehouse = frappe.db.get_value("Warehouse", {"is_group": 0}, "name")
 
 	# --- Customers ---
 	demo_customers = [
