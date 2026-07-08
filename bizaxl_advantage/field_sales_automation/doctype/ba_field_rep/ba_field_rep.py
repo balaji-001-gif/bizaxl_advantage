@@ -5,5 +5,5 @@ import frappe
 from frappe.model.document import Document
 
 
-class BaFieldRep(Document):
+class BAFieldRep(Document):
 	pass

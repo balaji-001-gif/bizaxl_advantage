@@ -5,5 +5,5 @@ import frappe
 from frappe.model.document import Document
 
 
-class BaUsageCounter(Document):
+class BAUsageCounter(Document):
 	pass

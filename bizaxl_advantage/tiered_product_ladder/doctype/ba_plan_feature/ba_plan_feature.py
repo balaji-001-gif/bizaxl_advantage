@@ -5,5 +5,5 @@ import frappe
 from frappe.model.document import Document
 
 
-class BaPlanFeature(Document):
+class BAPlanFeature(Document):
 	pass

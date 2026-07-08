@@ -5,5 +5,5 @@ import frappe
 from frappe.model.document import Document
 
 
-class BaBuyerSubscription(Document):
+class BABuyerSubscription(Document):
 	pass

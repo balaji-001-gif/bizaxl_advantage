@@ -5,5 +5,5 @@ import frappe
 from frappe.model.document import Document
 
 
-class BaBuyerPriceTier(Document):
+class BABuyerPriceTier(Document):
 	pass

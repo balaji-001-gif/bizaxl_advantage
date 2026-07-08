@@ -5,5 +5,5 @@ import frappe
 from frappe.model.document import Document
 
 
-class BaOrderStatusLog(Document):
+class BAOrderStatusLog(Document):
 	pass

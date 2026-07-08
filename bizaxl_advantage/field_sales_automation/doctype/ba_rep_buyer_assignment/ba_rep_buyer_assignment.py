@@ -5,5 +5,5 @@ import frappe
 from frappe.model.document import Document
 
 
-class BaRepBuyerAssignment(Document):
+class BARepBuyerAssignment(Document):
 	pass

@@ -5,5 +5,5 @@ import frappe
 from frappe.model.document import Document
 
 
-class BaPortalBuyer(Document):
+class BAPortalBuyer(Document):
 	pass
