@@ -1,0 +1,60 @@
+[
+ {
+  "doctype": "Web Form",
+  "name": "b2b-order",
+  "title": "Place a B2B Order",
+  "route": "b2b-order",
+  "doc_type": "BA Portal Order",
+  "module": "B2B Ordering Portal",
+  "is_standard": 1,
+  "published": 1,
+  "login_required": 1,
+  "allow_multiple": 1,
+  "allow_edit": 0,
+  "allow_delete": 0,
+  "allow_print": 1,
+  "show_list": 1,
+  "list_columns": [
+   {
+    "fieldname": "order_date"
+   },
+   {
+    "fieldname": "status"
+   },
+   {
+    "fieldname": "total_amount"
+   }
+  ],
+  "condition_json": "[]",
+  "web_form_fields": [
+   {
+    "fieldname": "buyer",
+    "fieldtype": "Link",
+    "options": "BA Portal Buyer",
+    "label": "Buyer",
+    "reqd": 1,
+    "read_only": 1
+   },
+   {
+    "fieldname": "requested_delivery_date",
+    "fieldtype": "Date",
+    "label": "Requested Delivery Date",
+    "reqd": 1
+   },
+   {
+    "fieldname": "delivery_address",
+    "fieldtype": "Small Text",
+    "label": "Delivery Address"
+   },
+   {
+    "fieldname": "items",
+    "fieldtype": "Table",
+    "options": "BA Portal Order Item",
+    "label": "Order Items",
+    "reqd": 1
+   }
+  ],
+  "success_message": "Your order has been submitted. You'll see status updates here as it's processed.",
+  "introduction_text": "Select your items and delivery date. Pricing shown reflects your assigned price tier."
+ }
+]

@@ -1,0 +1,19 @@
+{
+ "add_total_row": 0,
+ "creation": "2026-01-01 00:00:00.000000",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "is_standard": "Yes",
+ "module": "Tiered Product Ladder",
+ "name": "BA Subscription Expiry Report",
+ "prepared_report": 0,
+ "query": "select bs.buyer as \"Buyer:Link/BA Portal Buyer:180\", bs.plan as \"Plan:Link/BA Subscription Plan:150\", bs.end_date as \"End Date:Date:110\", bs.status as \"Status:Data:100\", datediff(bs.end_date, curdate()) as \"Days Remaining:Int:120\" from `tabBA Buyer Subscription` bs where bs.status in ('Active','Trial') and bs.end_date <= date_add(curdate(), interval 30 day) order by bs.end_date asc",
+ "ref_doctype": "BA Buyer Subscription",
+ "report_name": "BA Subscription Expiry Report",
+ "report_type": "Query Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Sales Manager"}
+ ]
+}

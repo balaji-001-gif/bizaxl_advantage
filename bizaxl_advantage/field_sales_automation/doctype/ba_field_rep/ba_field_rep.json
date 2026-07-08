@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:rep_name",
+ "creation": "2026-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rep_name",
+  "user",
+  "territory",
+  "mobile_no",
+  "reports_to",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "rep_name",
+   "label": "Rep Name",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "user",
+   "label": "User",
+   "fieldtype": "Link",
+   "options": "User"
+  },
+  {
+   "fieldname": "territory",
+   "label": "Territory",
+   "fieldtype": "Link",
+   "options": "BA Sales Territory",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "label": "Mobile No",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "reports_to",
+   "label": "Reports To",
+   "fieldtype": "Link",
+   "options": "BA Field Rep"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Active\nInactive",
+   "default": "Active",
+   "in_list_view": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Field Sales Automation",
+ "name": "BA Field Rep",
+ "owner": "Administrator",
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "title_field": "rep_name",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ]
+}

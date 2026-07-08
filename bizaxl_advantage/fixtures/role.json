@@ -1,0 +1,18 @@
+[
+ {
+  "doctype": "Role",
+  "name": "B2B Buyer",
+  "role_name": "B2B Buyer",
+  "desk_access": 0,
+  "disabled": 0,
+  "is_custom": 1
+ },
+ {
+  "doctype": "Role",
+  "name": "Field Sales Rep",
+  "role_name": "Field Sales Rep",
+  "desk_access": 1,
+  "disabled": 0,
+  "is_custom": 1
+ }
+]

@@ -1,0 +1,2 @@
+# All runtime dependencies (frappe, erpnext) are provided by the bench
+# environment. This app has no extra Python dependencies of its own.

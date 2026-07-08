@@ -1,0 +1,298 @@
+[
+ {
+  "charts": [],
+  "content": "[{\"id\": \"hdr1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\">Bizaxl Advantage Suite</span>\", \"col\": 12}}, {\"id\": \"para1\", \"type\": \"paragraph\", \"data\": {\"text\": \"B2B Ordering Portal, Field Sales Automation and Tiered Product Ladder.\", \"col\": 12}}, {\"id\": \"hdr2\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">B2B Ordering Portal</span>\", \"col\": 12}}, {\"id\": \"sc1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Portal Buyer\", \"col\": 3}}, {\"id\": \"sc2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Portal Order\", \"col\": 3}}, {\"id\": \"sc3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Buyer Price Tier\", \"col\": 3}}, {\"id\": \"sc4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Stock Snapshot\", \"col\": 3}}, {\"id\": \"sc5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Portal Order Summary\", \"col\": 3}}, {\"id\": \"sc6\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Buyer Price Comparison\", \"col\": 3}}, {\"id\": \"hdr3\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">Field Sales Automation</span>\", \"col\": 12}}, {\"id\": \"sc7\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Field Rep\", \"col\": 3}}, {\"id\": \"sc8\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Route Plan\", \"col\": 3}}, {\"id\": \"sc9\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Visit Log\", \"col\": 3}}, {\"id\": \"sc10\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Field Rep Visit Compliance\", \"col\": 3}}, {\"id\": \"hdr4\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">Tiered Product Ladder</span>\", \"col\": 12}}, {\"id\": \"sc11\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Subscription Plan\", \"col\": 3}}, {\"id\": \"sc12\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Buyer Subscription\", \"col\": 3}}, {\"id\": \"sc13\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BA Subscription Expiry Report\", \"col\": 3}}]",
+  "creation": "2026-01-01 00:00:00.000000",
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "retail",
+  "idx": 0,
+  "indicator_color": "blue",
+  "is_hidden": 0,
+  "label": "Bizaxl Advantage",
+  "links": [
+   {
+    "type": "Card Break",
+    "label": "B2B Ordering Portal",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0
+   },
+   {
+    "type": "Link",
+    "label": "BA Portal Buyer",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Portal Buyer",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Buyer Price Tier",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Buyer Price Tier",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Buyer Item Price",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Buyer Item Price",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Portal Catalog Item",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Portal Catalog Item",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Portal Order",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Portal Order",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Stock Snapshot",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Stock Snapshot",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Card Break",
+    "label": "Field Sales Automation",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0
+   },
+   {
+    "type": "Link",
+    "label": "BA Sales Territory",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Sales Territory",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Field Rep",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Field Rep",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Route Plan",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Route Plan",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Visit Log",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Visit Log",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Detailing Content",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Detailing Content",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Card Break",
+    "label": "Tiered Product Ladder",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0
+   },
+   {
+    "type": "Link",
+    "label": "BA Subscription Plan",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Subscription Plan",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Buyer Subscription",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Buyer Subscription",
+    "link_type": "DocType"
+   },
+   {
+    "type": "Link",
+    "label": "BA Usage Counter",
+    "hidden": 0,
+    "is_query_report": 0,
+    "onboard": 0,
+    "link_count": 0,
+    "link_to": "BA Usage Counter",
+    "link_type": "DocType"
+   }
+  ],
+  "modified": "2026-01-01 00:00:00.000000",
+  "module": "B2B Ordering Portal",
+  "name": "Bizaxl Advantage",
+  "number_cards": [],
+  "owner": "Administrator",
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "roles": [],
+  "sequence_id": 20.0,
+  "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "label": "BA Portal Buyer",
+    "link_to": "BA Portal Buyer",
+    "stats_filter": "{}",
+    "type": "DocType"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "label": "BA Portal Order",
+    "link_to": "BA Portal Order",
+    "stats_filter": "{}",
+    "type": "DocType"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "label": "BA Buyer Price Tier",
+    "link_to": "BA Buyer Price Tier",
+    "stats_filter": "{}",
+    "type": "DocType"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "label": "BA Stock Snapshot",
+    "link_to": "BA Stock Snapshot",
+    "stats_filter": "{}",
+    "type": "DocType"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "",
+    "label": "BA Portal Order Summary",
+    "link_to": "BA Portal Order Summary",
+    "stats_filter": "{}",
+    "type": "Report"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "",
+    "label": "BA Buyer Price Comparison",
+    "link_to": "BA Buyer Price Comparison",
+    "stats_filter": "{}",
+    "type": "Report"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "label": "BA Field Rep",
+    "link_to": "BA Field Rep",
+    "stats_filter": "{}",
+    "type": "DocType"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "label": "BA Route Plan",
+    "link_to": "BA Route Plan",
+    "stats_filter": "{}",
+    "type": "DocType"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "label": "BA Visit Log",
+    "link_to": "BA Visit Log",
+    "stats_filter": "{}",
+    "type": "DocType"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "",
+    "label": "BA Field Rep Visit Compliance",
+    "link_to": "BA Field Rep Visit Compliance",
+    "stats_filter": "{}",
+    "type": "Report"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "label": "BA Subscription Plan",
+    "link_to": "BA Subscription Plan",
+    "stats_filter": "{}",
+    "type": "DocType"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "label": "BA Buyer Subscription",
+    "link_to": "BA Buyer Subscription",
+    "stats_filter": "{}",
+    "type": "DocType"
+   },
+   {
+    "color": "Grey",
+    "doc_view": "",
+    "label": "BA Subscription Expiry Report",
+    "link_to": "BA Subscription Expiry Report",
+    "stats_filter": "{}",
+    "type": "Report"
+   }
+  ],
+  "title": "Bizaxl Advantage"
+ }
+]

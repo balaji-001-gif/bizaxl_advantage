@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "field_rep",
+  "buyer",
+  "assigned_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "field_rep",
+   "label": "Field Rep",
+   "fieldtype": "Link",
+   "options": "BA Field Rep",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "buyer",
+   "label": "Buyer",
+   "fieldtype": "Link",
+   "options": "BA Portal Buyer",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "assigned_on",
+   "label": "Assigned On",
+   "fieldtype": "Date",
+   "default": "Today"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Field Sales Automation",
+ "name": "BA Rep Buyer Assignment",
+ "owner": "Administrator",
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ]
+}

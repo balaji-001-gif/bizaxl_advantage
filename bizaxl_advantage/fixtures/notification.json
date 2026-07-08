@@ -1,0 +1,77 @@
+[
+ {
+  "doctype": "Notification",
+  "name": "BA New Portal Order Submitted",
+  "subject": "New B2B Order {{ doc.name }} from {{ doc.buyer }}",
+  "document_type": "BA Portal Order",
+  "event": "Submit",
+  "channel": "System Notification",
+  "send_system_notification": 1,
+  "enabled": 1,
+  "message": "<p>A new B2B portal order <strong>{{ doc.name }}</strong> was submitted by <strong>{{ doc.buyer }}</strong> for {{ doc.get_formatted(\"total_amount\") }}.</p>",
+  "recipients": [
+   {
+    "receiver_by_role": "Sales Manager"
+   }
+  ]
+ },
+ {
+  "doctype": "Notification",
+  "name": "BA Portal Order Dispatched",
+  "subject": "Your order {{ doc.name }} has been dispatched",
+  "document_type": "BA Portal Order",
+  "event": "Value Change",
+  "value_changed": "status",
+  "condition": "doc.status == 'Dispatched'",
+  "channel": "Email",
+  "enabled": 1,
+  "message": "<p>Good news \u2014 your order <strong>{{ doc.name }}</strong> has been dispatched. You can track it any time from your buyer portal login.</p>",
+  "recipients": [
+   {
+    "receiver_by_document_field": "buyer_email"
+   },
+   {
+    "receiver_by_role": "Sales Manager"
+   }
+  ]
+ },
+ {
+  "doctype": "Notification",
+  "name": "BA Subscription Expiring Soon",
+  "subject": "Subscription for {{ doc.buyer }} expires in 7 days",
+  "document_type": "BA Buyer Subscription",
+  "event": "Days Before",
+  "date_changed": "end_date",
+  "days_in_advance": 7,
+  "channel": "System Notification",
+  "send_system_notification": 1,
+  "enabled": 1,
+  "message": "<p>The <strong>{{ doc.plan }}</strong> subscription for buyer <strong>{{ doc.buyer }}</strong> expires on {{ doc.end_date }}. Reach out before it lapses.</p>",
+  "recipients": [
+   {
+    "receiver_by_role": "Sales Manager"
+   }
+  ]
+ },
+ {
+  "doctype": "Notification",
+  "name": "BA Low Stock Alert",
+  "subject": "Low/out of stock: {{ doc.item }} at {{ doc.warehouse }}",
+  "document_type": "BA Stock Snapshot",
+  "event": "Value Change",
+  "value_changed": "stock_status",
+  "condition": "doc.stock_status == 'Out of Stock'",
+  "channel": "System Notification",
+  "send_system_notification": 1,
+  "enabled": 1,
+  "message": "<p><strong>{{ doc.item }}</strong> is now Out of Stock in warehouse <strong>{{ doc.warehouse }}</strong>. Portal buyers will see this immediately.</p>",
+  "recipients": [
+   {
+    "receiver_by_role": "Sales Manager"
+   },
+   {
+    "receiver_by_role": "Stock Manager"
+   }
+  ]
+ }
+]

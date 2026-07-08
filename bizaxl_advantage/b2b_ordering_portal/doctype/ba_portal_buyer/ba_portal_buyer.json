@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:buyer_name",
+ "creation": "2026-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "buyer_name",
+  "buyer_type",
+  "gstin",
+  "contact_person",
+  "mobile_no",
+  "email",
+  "column_break_1",
+  "portal_user",
+  "territory",
+  "price_tier",
+  "credit_limit",
+  "status",
+  "section_break_1",
+  "shipping_address",
+  "restricted_item_groups"
+ ],
+ "fields": [
+  {
+   "fieldname": "buyer_name",
+   "label": "Buyer Name",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "buyer_type",
+   "label": "Buyer Type",
+   "fieldtype": "Select",
+   "options": "Retailer\nSub-Retailer\nDistributor\nHospital Pharmacy",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "gstin",
+   "label": "GSTIN",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "contact_person",
+   "label": "Contact Person",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "mobile_no",
+   "label": "Mobile No",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "email",
+   "label": "Email",
+   "fieldtype": "Data",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_1",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "portal_user",
+   "label": "Portal User",
+   "fieldtype": "Link",
+   "options": "User",
+   "description": "The Website User account this buyer logs into the portal with."
+  },
+  {
+   "fieldname": "territory",
+   "label": "Territory",
+   "fieldtype": "Link",
+   "options": "BA Sales Territory"
+  },
+  {
+   "fieldname": "price_tier",
+   "label": "Price Tier",
+   "fieldtype": "Link",
+   "options": "BA Buyer Price Tier"
+  },
+  {
+   "fieldname": "credit_limit",
+   "label": "Credit Limit",
+   "fieldtype": "Currency"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Pending Approval\nActive\nBlocked",
+   "default": "Pending Approval",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "label": "Restrictions & Address",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shipping_address",
+   "label": "Shipping Address",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "restricted_item_groups",
+   "label": "Restricted Item Groups",
+   "fieldtype": "Table",
+   "options": "BA Buyer Restricted Item Group"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "B2B Ordering Portal",
+ "name": "BA Portal Buyer",
+ "owner": "Administrator",
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "title_field": "buyer_name",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ]
+}

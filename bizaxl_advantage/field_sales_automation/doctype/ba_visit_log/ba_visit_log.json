@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "field_rep",
+  "buyer",
+  "visit_datetime",
+  "column_break_7",
+  "latitude",
+  "longitude",
+  "outcome",
+  "order_ref",
+  "section_break_8",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "field_rep",
+   "label": "Field Rep",
+   "fieldtype": "Link",
+   "options": "BA Field Rep",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "buyer",
+   "label": "Buyer",
+   "fieldtype": "Link",
+   "options": "BA Portal Buyer",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "visit_datetime",
+   "label": "Visit Datetime",
+   "fieldtype": "Datetime",
+   "default": "Now",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "latitude",
+   "label": "Latitude",
+   "fieldtype": "Float"
+  },
+  {
+   "fieldname": "longitude",
+   "label": "Longitude",
+   "fieldtype": "Float"
+  },
+  {
+   "fieldname": "outcome",
+   "label": "Outcome",
+   "fieldtype": "Select",
+   "options": "Order Booked\nNo Order\nFollow-up Needed\nBuyer Unavailable",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "order_ref",
+   "label": "Order Booked (Portal Order)",
+   "fieldtype": "Link",
+   "options": "BA Portal Order"
+  },
+  {
+   "fieldname": "section_break_8",
+   "label": "Notes",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "label": "Notes",
+   "fieldtype": "Text"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Field Sales Automation",
+ "name": "BA Visit Log",
+ "owner": "Administrator",
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ]
+}

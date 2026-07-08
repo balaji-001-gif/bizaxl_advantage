@@ -1,0 +1,12 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.txt
+recursive-include bizaxl_advantage *.json
+recursive-include bizaxl_advantage *.md
+recursive-include bizaxl_advantage *.py
+recursive-include bizaxl_advantage *.html
+recursive-include bizaxl_advantage *.js
+recursive-include bizaxl_advantage *.css
+recursive-exclude bizaxl_advantage *.pyc
