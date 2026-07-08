@@ -1,17 +1,25 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "hash",
+ "autoname": "naming_series:",
  "creation": "2026-01-01 00:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "portal_order",
   "status",
   "changed_on",
   "remarks"
  ],
  "fields": [
+  {
+   "fieldname": "naming_series",
+   "label": "Series",
+   "fieldtype": "Select",
+   "options": "BA-OSL-.YYYY.-",
+   "default": "BA-OSL-.YYYY.-"
+  },
   {
    "fieldname": "portal_order",
    "label": "Portal Order",

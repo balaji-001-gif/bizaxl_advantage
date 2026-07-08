@@ -1,16 +1,24 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "hash",
+ "autoname": "naming_series:",
  "creation": "2026-01-01 00:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "field_rep",
   "buyer",
   "assigned_on"
  ],
  "fields": [
+  {
+   "fieldname": "naming_series",
+   "label": "Series",
+   "fieldtype": "Select",
+   "options": "BA-RBA-.YYYY.-",
+   "default": "BA-RBA-.YYYY.-"
+  },
   {
    "fieldname": "field_rep",
    "label": "Field Rep",

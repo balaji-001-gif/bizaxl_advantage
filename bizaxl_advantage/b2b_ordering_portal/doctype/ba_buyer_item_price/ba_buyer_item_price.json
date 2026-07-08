@@ -1,17 +1,25 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "hash",
+ "autoname": "naming_series:",
  "creation": "2026-01-01 00:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "buyer_price_tier",
   "item",
   "price",
   "uom"
  ],
  "fields": [
+  {
+   "fieldname": "naming_series",
+   "label": "Series",
+   "fieldtype": "Select",
+   "options": "BA-BIP-.YYYY.-",
+   "default": "BA-BIP-.YYYY.-"
+  },
   {
    "fieldname": "buyer_price_tier",
    "label": "Buyer Price Tier",

@@ -1,11 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "hash",
+ "autoname": "naming_series:",
  "creation": "2026-01-01 00:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "item",
   "warehouse",
   "available_qty",
@@ -14,6 +15,13 @@
   "last_synced"
  ],
  "fields": [
+  {
+   "fieldname": "naming_series",
+   "label": "Series",
+   "fieldtype": "Select",
+   "options": "BA-SS-.YYYY.-",
+   "default": "BA-SS-.YYYY.-"
+  },
   {
    "fieldname": "item",
    "label": "Item",
