@@ -67,16 +67,24 @@ class BAPortalOrder(Document):
 			frappe.throw(_("Sales Order already created for this Portal Order."))
 
 		buyer = frappe.get_doc("BA Portal Buyer", self.buyer)
-		customer = frappe.db.get_value("Customer", {"customer_name": buyer.buyer_name})
-		if not customer:
+		if not buyer.erpnext_customer:
 			frappe.throw(
-				_("No ERPNext Customer record found for buyer {0}. Create/link one first.").format(
-					buyer.buyer_name
+				_(
+					"Buyer {0} has no ERPNext Customer linked (BA Portal Buyer > "
+					"ERPNext Customer field). Link it before converting orders -- "
+					"this is deliberate: guessing a Customer by name risks billing "
+					"the wrong account."
+				).format(frappe.utils.get_link_to_form("BA Portal Buyer", buyer.name))
+			)
+		if not frappe.db.exists("Customer", buyer.erpnext_customer):
+			frappe.throw(
+				_("Linked Customer {0} on buyer {1} no longer exists.").format(
+					buyer.erpnext_customer, buyer.buyer_name
 				)
 			)
 
 		so = frappe.new_doc("Sales Order")
-		so.customer = customer
+		so.customer = buyer.erpnext_customer
 		so.delivery_date = self.requested_delivery_date
 		for row in self.items:
 			so.append("items", {

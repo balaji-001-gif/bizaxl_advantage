@@ -14,6 +14,7 @@
   "email",
   "column_break_1",
   "portal_user",
+  "erpnext_customer",
   "territory",
   "price_tier",
   "credit_limit",
@@ -69,6 +70,13 @@
    "fieldtype": "Link",
    "options": "User",
    "description": "The Website User account this buyer logs into the portal with."
+  },
+  {
+   "fieldname": "erpnext_customer",
+   "label": "ERPNext Customer",
+   "fieldtype": "Link",
+   "options": "Customer",
+   "description": "Explicit link to the Customer record used for Sales Order / Delivery Note / Sales Invoice creation. Required before this buyer can convert orders -- not inferred from name."
   },
   {
    "fieldname": "territory",
