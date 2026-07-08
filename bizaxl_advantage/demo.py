@@ -233,19 +233,18 @@ def _ensure_erpnext_prereqs():
 		created_items.append(it["item_code"])
 
 	# --- Warehouse ---
-	if not frappe.db.get_value("Warehouse", {"warehouse_name": "Main Store - Main"}):
+	# First look for any existing non-group warehouse
+	warehouse = frappe.db.get_value("Warehouse", {"is_group": 0}, "name")
+	if not warehouse:
+		# No warehouse exists yet -- create one
 		company = frappe.db.get_single_value("Global Defaults", "default_company") or "Demo Company"
 		if not frappe.db.exists("Company", company):
 			_insert("Company", {"company_name": company, "abbr": "DEMO", "country": "India", "default_currency": "INR"})
-		# Use company abbreviation for warehouse name convention
 		company_abbr = frappe.db.get_value("Company", company, "abbr") or "DEMO"
 		warehouse_name = f"Main Store - {company_abbr}"
-		warehouse = frappe.db.get_value("Warehouse", {"warehouse_name": warehouse_name}, "name")
-		if not warehouse:
+		if not frappe.db.exists("Warehouse", warehouse_name):
 			_insert("Warehouse", {"warehouse_name": "Main Store", "company": company, "is_group": 0})
-			warehouse = f"Main Store - {company_abbr}"
-
-	warehouse = frappe.db.get_value("Warehouse", {"is_group": 0}, "name")
+		warehouse = frappe.db.get_value("Warehouse", {"is_group": 0}, "name")
 
 	# --- Customers ---
 	demo_customers = [
